@@ -1,0 +1,213 @@
+.bp-gallery .icon {
+  z-index: 100 !important;
+}
+
+.bp-gallery .bp-gallery-item>div:hover .icon-video,
+.bp-gallery .bp-gallery-item>div:hover .icon-focus {
+  opacity: 1;
+}
+
+.bp-gallery .icon-video {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 27px);
+  font-size: 3rem;
+  transition: .2s opacity ease-in-out;
+  z-index: 5;
+}
+
+.bp-gallery .icon-video::before {
+  color: white;
+  content: "\e011";
+  position: absolute;
+}
+
+.bp-gallery .icon-focus {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 32px);
+  font-size: 3rem !important;
+  transition: .2s opacity ease-in-out;
+  z-index: 5;
+  font-family: 'et-line' !important;
+}
+
+.bp-gallery .icon-focus::before {
+  content: '\e01b';
+  color: white;
+  position: absolute;
+}
+
+.bp-gallery .bp-gallery-item {
+  cursor: pointer;
+}
+
+.bp-gallery .item-overlay {
+  position: absolute;
+  width: 60px;
+  font-size: 60px;
+  z-index: 10;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.bp-gallery .bp-gallery-item> div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #554346, #45505b) !important;
+  background: -moz-linear-gradient(left, #554346, #45505b) !important;
+  background: -o-linear-gradient(left, #554346, #45505b) !important;
+  background: -ms-linear-gradient(left, #554346, #45505b) !important;
+  background: linear-gradient(left, #554346, #45505b) !important;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.bp-gallery .bp-gallery-item:hover> div::before {
+  opacity: 0.5;
+}
+
+.bp-gallery-row {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.bp-gallery-item__hided {
+  position: absolute !important;
+  width: 0px !important;
+  height: 0px;
+  left: 0 !important;
+  padding: 0 !important;
+}
+
+.bp-gallery-item__hided img {
+  display: none;
+}
+
+.bp-gallery-item__hided span {
+  display: none;
+}
+
+.bp-gallery-filter {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.bp-gallery-filter.gallery-filter__bg li{
+ color: white;
+}
+.bp-gallery-filter.gallery-filter__bg .active{
+  color:black;
+  background-color: white;
+}
+
+.bp-gallery-filter ul {
+  padding-left: 0px;
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.bp-gallery-filter li {
+  font-size: 16px;
+  font-family: 'Raleway';
+  cursor: pointer;
+  color: #242424;
+  display: inline-block;
+  padding: 9px 30px 9px 30px;
+  border: 1px solid #e6e6e6;
+  transition: all 0.3s ease-out;
+}
+
+.bp-gallery-filter li:hover {
+  background-color: #333333;
+  color: #c39f76;
+}
+
+.bp-gallery-filter li.active {
+  color: white;
+  background-color: #333333;
+}
+
+.bp-gallery-filter li.active:hover {
+  color: white;
+  background-color: #333333;
+}
+
+.bp-gallery-item> div {
+  position: relative;
+}
+
+.bp-gallery-item--p1 {
+  padding: 1rem;
+}
+
+.bp-gallery-item--p2 {
+  padding: 2rem;
+}
+
+.bp-gallery-item--p3 {
+  padding: 3rem;
+}
+
+.bp-gallery-item--p4 {
+  padding: 4rem;
+}
+
+.bp-gallery-item--p5 {
+  padding: 5rem;
+}
+
+.bp-gallery-item--p6 {
+  padding: 6rem;
+}
+.bp-gallery .bp-gallery-item--p6, .bp-gallery .bp-gallery-item--p5,.bp-gallery .bp-gallery-item--p4{
+    width:50%;
+}
+@media(max-width:992px){
+     .bp-gallery-item--p1 {
+    padding: 1rem;
+  }
+  .bp-gallery-item--p2 {
+    padding: 2rem;
+  }
+  .bp-gallery-item--p3 {
+    padding: 3rem;
+  }
+  .bp-gallery-item--p4 {
+    padding: 3rem;
+  }
+  .bp-gallery-item--p5 {
+    padding: 3rem;
+  }
+  .bp-gallery-item--p6 {
+    padding: 3rem;
+  }
+}
+.video-container .bp-background-video iframe {
+  width:100%;
+  height:100%;
+}
+@media(max-width:992px) and (min-width:400px) {
+
+  .bp-gallery .bp-gallery-item--p6, .bp-gallery .bp-gallery-item--p5, .bp-gallery .bp-gallery-item--p4, .bp-gallery .bp-gallery-item--p3, .bp-gallery .bp-gallery-item--p2 {
+    width: 50%;
+  }
+}
+@media(max-width:400px){
+    .bp-gallery .bp-gallery-item--p6, .bp-gallery .bp-gallery-item--p5, .bp-gallery .bp-gallery-item--p4, .bp-gallery-item--p3{
+    width:100%;
+}
+}
